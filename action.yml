@@ -34,6 +34,10 @@ inputs:
     required: false
     default: true
 
+outputs:
+  full_image_tag:
+    description: 'The tag of the final image that gets pushed'
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
