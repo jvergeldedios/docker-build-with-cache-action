@@ -93,3 +93,5 @@ if [ "$INPUT_PUSH_IMAGE_AND_STAGES" = true ]; then
 fi
 
 logout_from_registry
+
+echo ::set-output name=full_image_tag::"$(_get_full_image_name)":${INPUT_IMAGE_TAG}
